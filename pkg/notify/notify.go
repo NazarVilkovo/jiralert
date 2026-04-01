@@ -26,9 +26,9 @@ import (
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
 	"github.com/pkg/errors"
-	"github.com/prometheus-community/jiralert/pkg/alertmanager"
-	"github.com/prometheus-community/jiralert/pkg/config"
-	"github.com/prometheus-community/jiralert/pkg/template"
+	"github.com/м/jiralert/pkg/alertmanager"
+	"github.com/NazarVilkovo/jiralert/pkg/config"
+	"github.com/NazarVilkovo/jiralert/pkg/template"
 	"github.com/trivago/tgo/tcontainer"
 )
 
@@ -149,7 +149,7 @@ func (r *Receiver) Notify(data *alertmanager.Data, hashJiraLabel bool) (bool, er
 			Type:        jira.IssueType{Name: issueType},
 			Description: issueDesc,
 			Summary:     issueSummary,
-			Labels:      []string{issueGroupLabel},
+			// Labels:      []string{issueGroupLabel},
 			Unknowns:    tcontainer.NewMarshalMap(),
 		},
 	}
