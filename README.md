@@ -13,10 +13,10 @@ If a corresponding JIRA issue already exists but is resolved, it is reopened. A 
 
 ## Usage
 
-Get JIRAlert, either as a [packaged release](https://github.com/prometheus-community/jiralert/releases) or build it yourself:
+Get JIRAlert, either as a [packaged release](https://github.com/NazarVilkovo/jiralert/releases) or build it yourself:
 
 ```
-$ go get github.com/prometheus-community/jiralert/cmd/jiralert
+$ go get github.com/NazarVilkovo/jiralert/cmd/jiralert
 ```
 
 then run it from the command line:
