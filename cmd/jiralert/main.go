@@ -25,10 +25,10 @@ import (
 
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
-	"github.com/prometheus-community/jiralert/pkg/alertmanager"
-	"github.com/prometheus-community/jiralert/pkg/config"
-	"github.com/prometheus-community/jiralert/pkg/notify"
-	"github.com/prometheus-community/jiralert/pkg/template"
+	"github.com/NazarVilkovo/jiralert/pkg/alertmanager"
+	"github.com/NazarVilkovo/jiralert/pkg/config"
+	"github.com/NazarVilkovo/jiralert/pkg/notify"
+	"github.com/NazarVilkovo/jiralert/pkg/template"
 
 	_ "net/http/pprof"
 
@@ -66,7 +66,7 @@ func main() {
 
 	if !*hashJiraLabel {
 		level.Warn(logger).Log("msg", "Using deprecated jira label generation - "+
-			"please read https://github.com/prometheus-community/jiralert/pull/79 "+
+			"please read https://github.com/NazarVilkovo/jiralert/pull/79 "+
 			"and try -hash-jira-label")
 	}
 
