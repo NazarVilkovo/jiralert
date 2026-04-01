@@ -26,7 +26,7 @@ import (
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
 	"github.com/pkg/errors"
-	"github.com/м/jiralert/pkg/alertmanager"
+	"github.com/NazarVilkovo/jiralert/pkg/alertmanager"
 	"github.com/NazarVilkovo/jiralert/pkg/config"
 	"github.com/NazarVilkovo/jiralert/pkg/template"
 	"github.com/trivago/tgo/tcontainer"
